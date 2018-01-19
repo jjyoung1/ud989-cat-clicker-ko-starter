@@ -15,6 +15,9 @@
             attr: {src: imgSrc} ">
 
     </div>
+    <ul data-bind="foreach: nicknames">
+        <li data-bind="text: nickname"></li>
+    </ul>
     <script src="js/lib/knockout-3.2.0.js"></script>
     <script src="js/app.js"></script>
 </body>
