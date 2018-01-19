@@ -19,11 +19,8 @@ var ViewModel = function () {
     };
 
     this.nicknames = ko.observableArray([
-        {nickname: 'Tabtab'},
-        {nickname: 'T-bone'},
-        {nickname: 'Mr. T'},
-        {nickname: 'Tabitha Tab Tabby Catty Cat'}
-    ]);
+        'Tabtab', 'T-bone', 'Mr. T',
+        'Tabitha Tab Tabby Catty Cat']);
 
 };
 
