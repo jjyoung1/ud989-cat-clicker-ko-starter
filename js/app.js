@@ -18,14 +18,12 @@ var ViewModel = function () {
         this.clickCount(this.clickCount() + 1);
     };
 
-    ko.applyBindings({
-        nicknames: [
-            {nickname: 'Tabtab'},
-            {nickname: 'T-bone'},
-            {nickname: 'Mr. T'},
-            {nickname: 'Tabitha Tab Tabby Catty Cat'}
-        ]
-    });
+    this.nicknames = ko.observableArray([
+        {nickname: 'Tabtab'},
+        {nickname: 'T-bone'},
+        {nickname: 'Mr. T'},
+        {nickname: 'Tabitha Tab Tabby Catty Cat'}
+    ]);
 
 };
 
