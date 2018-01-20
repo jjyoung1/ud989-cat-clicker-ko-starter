@@ -5,6 +5,9 @@
     <title>Cat Clicker</title>
 </head>
 <body>
+<div data-bind="foreach: catList">
+    <button type="button" data-bind="click:setCurrentCat, text: $data.name" ></button>
+</div>
 <ul id="cat-list"></ul>
 <div id="cat" data-bind="with:currentCat">
 
@@ -20,6 +23,11 @@
             <li data-bind="text: $data"></li>
         </ul>
     </div>
+    <p>Image Source:
+        <a href="" alt="Image Source"
+           data-bind="attr: { href: srcAttribution}, text: srcAttribution"
+           alt="Image source"></a>
+    </p>
 </div>
 <script src="js/lib/knockout-3.2.0.js"></script>
 <script src="js/app.js"></script>
