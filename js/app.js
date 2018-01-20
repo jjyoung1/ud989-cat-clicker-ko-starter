@@ -72,7 +72,7 @@ var ViewModel = function () {
     };
 
     this.setCurrentCat = function(aCat){
-        self.currentCat = aCat;
+        self.currentCat(aCat);
     }
 
 };
